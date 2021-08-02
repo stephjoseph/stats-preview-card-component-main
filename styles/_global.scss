@@ -1,0 +1,30 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  @include flex(center, center, row);
+  width: 100%;
+  height: 100%;
+  background: $background-color;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-size: $text;
+}
+
+h2 {
+  font-size: $header2;
+}
+
+h4 {
+  font-size: $header4;
+}

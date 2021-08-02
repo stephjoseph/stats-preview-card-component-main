@@ -1,0 +1,25 @@
+$header2: 4rem;
+$header4: 2.5rem;
+$text: 1.4rem;
+$background-color: hsl(233, 47%, 7%);
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+@import "global";
+@import "card";
+
+.attribution {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  top: 95%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

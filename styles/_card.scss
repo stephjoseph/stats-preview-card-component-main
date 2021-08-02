@@ -1,0 +1,69 @@
+/* Card Styles */
+.card {
+  @include flex(flex-start, stretch, row);
+  background: hsl(244, 38%, 16%);
+  width: 80vw;
+  margin: auto;
+  border-radius: 15px;
+}
+.info {
+  @include flex(space-evenly, stretch, column);
+  margin: 0;
+  padding: 0rem 7.5rem;
+  width: 576px;
+  height: 448px;
+
+  .statistics {
+    @include flex(space-between, stretch, row);
+    margin-right: 10rem;
+  }
+
+  h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .main-paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    line-height: 1.7;
+    margin-top: -5rem;
+  }
+}
+.stat {
+  @include flex(left, stretch, column);
+}
+
+.stat-value {
+  color: hsl(0, 0%, 100%);
+}
+.stat-type p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding-top: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.accent {
+  color: hsl(277, 64%, 61%);
+}
+
+.card-img {
+  background-image: url("../images/image-header-desktop.jpg");
+  background-size: cover;
+  width: 576px;
+  height: 446px;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.card-img-background {
+  background-color: hsl(277, 64%, 61%);
+  height: 100%;
+  width: 100%;
+  border-radius: 0px 15px 15px 0px;
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+}
