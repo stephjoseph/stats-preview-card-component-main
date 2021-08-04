@@ -58,7 +58,6 @@ h4 {
       -ms-flex-direction: row;
           flex-direction: row;
   background: #1b1938;
-  width: 80vw;
   margin: auto;
   border-radius: 15px;
 }
