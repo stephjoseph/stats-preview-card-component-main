@@ -174,4 +174,55 @@ h4 {
 .attribution a {
   color: #3e52a3;
 }
+
+/* Media Query */
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 30%;
+  }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 90vh;
+  }
+  .card-img {
+    width: 256px;
+    height: 175px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .card-img-background {
+    border-radius: 15px 15px 0px 0px;
+  }
+  .info {
+    padding: 2rem;
+    width: 256px;
+    height: 271px;
+    text-align: center;
+  }
+  .info .main-paragraph {
+    margin: 0;
+  }
+  .info .statistics {
+    padding: 0;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .stat {
+    margin: 1rem;
+  }
+  .attribution {
+    margin-top: 2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
