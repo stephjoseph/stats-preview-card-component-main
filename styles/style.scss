@@ -23,3 +23,51 @@ $background-color: hsl(233, 47%, 7%);
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Media Query */
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 30%;
+  }
+
+  .card {
+    flex-direction: column-reverse;
+    height: 90vh;
+  }
+  .card-img {
+    width: 256px;
+    height: 175px;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .card-img-background {
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .info {
+    padding: 2rem;
+    width: 256px;
+    height: 271px;
+    text-align: center;
+
+    .main-paragraph {
+      margin: 0;
+    }
+
+    .statistics {
+      padding: 0;
+      margin: 0;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+  }
+  .stat {
+    margin: 1rem;
+  }
+
+  .attribution {
+    margin-top: 2rem;
+  }
+}
