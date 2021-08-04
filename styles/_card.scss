@@ -2,7 +2,6 @@
 .card {
   @include flex(flex-start, stretch, row);
   background: hsl(244, 38%, 16%);
-  width: 80vw;
   margin: auto;
   border-radius: 15px;
 }
